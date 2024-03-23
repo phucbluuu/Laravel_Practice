@@ -1,3 +1,7 @@
+/* This is an HTML document that contains a form for inputting student scores in Math, Physics, and
+Chemistry subjects. The form also includes a dropdown menu to select an area. When the user submits
+the form, the total points are calculated based on the input scores, and a rating is displayed based
+on the total points. Additionally, a priority point is displayed based on the selected area. */
 <!DOCTYPE html>
 <html>
 

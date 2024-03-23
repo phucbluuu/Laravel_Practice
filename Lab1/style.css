@@ -1,9 +1,12 @@
+/* The CSS code provided is styling the layout and appearance of a web page. Here is a breakdown of
+what each part of the code is doing: */
+/*Thiết lập kiểu font chữ cho toàn bộ trang web là sans-serif */
 html {
-    font-family: sans-serif;
+  font-family: sans-serif;
 }
 
 body {
-    margin: 0px;
+  margin: 0px;
 }
 
 h1,
@@ -12,38 +15,38 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 25px 0 15px 0;
+  margin: 25px 0 15px 0;
 }
 
 h2 {
-    font-size: 17px;
-    font-weight: bold;
+  font-size: 17px;
+  font-weight: bold;
 }
 
 #wrapper {
-    width: 80%;
-    margin: 0 auto;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .row {
-    width: 100%;
-    display: inline-block;
-    margin-bottom: 5px;
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 5px;
 }
 
 .lbltitle {
-    width: 20%;
-    float: left;
+  width: 20%;
+  float: left;
 }
 
 .lblinput,
 .lbloutput {
-    width: 80%;
-    float: left;
+  width: 80%;
+  float: left;
 }
 
 .submit {
-    padding: 10px 0;
-    text-align: center;
-    width: 50%;
+  padding: 10px 0;
+  text-align: center;
+  width: 50%;
 }
