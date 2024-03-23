@@ -1,8 +1,11 @@
+/* The code you provided is a PHP script that displays a table of products. Here's a breakdown of what
+the code does: */
 <?php
 require_once('entities/product.class.php');
 ?>
 <?php
 include_once('header.php');
+// Retrieve list of products
 $prods = Product::list_product();
 ?>
 <div class="container">

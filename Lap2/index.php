@@ -1,3 +1,4 @@
+/* The provided code is an HTML document with embedded PHP code. Here's a breakdown of what it does: */
 <!DOCTYPE html>
 <html>
 
@@ -14,7 +15,7 @@
 <div id="wrapper">
 <div class="row">
 <?php
-require_once("ThanhVien.php");
+require_once("thanhvien.php");
 // create new user info
 $sv = new member("Nguyen Van A", "email1@gmail.com");
 //output user info

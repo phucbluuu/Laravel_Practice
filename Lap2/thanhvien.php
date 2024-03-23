@@ -1,38 +1,30 @@
-
+/* The Staff class extends the Character class and generates a unique staff code for each staff member
+based on their part. */
 <?php
-require_once("hotro.php");
-class Member {
-    private $fullname;
-    private $email;
-    private $idmember;
+require_once("character.php");
 
-   
-    public function __construct($fullname, $email){
-        $this->fullname = $fullname;
-        $this->email = $email;
-        $this->idmember = idcontinue();
+class Staff extends Character {
+    private $staffcode;
+    private $part;
+
+    public function __construct($fullname_staff, $countrycode, $part) {
+        parent::__construct($fullname_staff, $countrycode);
+        $this->part = $part;
+        $this->staffcode = $this->staffcode_continue();
     }
 
-    public function __destruct(){
-      
-        $this->fullname = NULL;
-        $this->email = NULL;
-        $this->idmember = NULL;
+
+    public function get_staffcode() {
+        return $this->staffcode;
     }
 
-  
-    public function get_fullname(){
-        return $this->fullname;
+    public function get_part() {
+        return $this->part;
     }
 
- 
-    public function get_email(){
-        return $this->email;
-    }
-
- 
-    public function get_id(){
-        return $this->idmember;
+    private static $makecode = 0;
+    private function staffcode_continue() {
+        static $makecode = 1;
+        return $makecode++;
     }
 }
-?>
